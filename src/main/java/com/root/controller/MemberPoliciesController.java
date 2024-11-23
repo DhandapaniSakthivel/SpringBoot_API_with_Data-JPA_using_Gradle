@@ -1,6 +1,6 @@
 package com.root.controller;
 
-import com.root.ApplicationException;
+import com.root.exception.ApplicationException;
 import com.root.model.Member;
 import com.root.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;

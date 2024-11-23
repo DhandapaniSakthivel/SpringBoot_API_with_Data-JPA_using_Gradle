@@ -1,6 +1,6 @@
 package com.root.service;
 
-import com.root.ApplicationException;
+import com.root.exception.ApplicationException;
 import com.root.model.Member;
 import com.root.repository.MemberRepository;
 import org.slf4j.Logger;
@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
