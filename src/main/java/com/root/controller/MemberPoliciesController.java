@@ -1,5 +1,6 @@
 package com.root.controller;
 
+import com.root.ApplicationException;
 import com.root.model.Member;
 import com.root.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ public class MemberPoliciesController {
     @Autowired
     MemberService memberService;
     @GetMapping("/member/policies/")
-    public List<Member> getMemberDetailsByAge() {
+    public List<Member> getMemberDetailsByAge() throws ApplicationException {
         return memberService.getAll();
     }
 

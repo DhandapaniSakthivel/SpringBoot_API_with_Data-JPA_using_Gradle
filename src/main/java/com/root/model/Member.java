@@ -15,7 +15,9 @@ public class Member {
     Integer noOfRPIPolicies;
     Integer noOfRENPolicies;
 
-    public Member(String memberNumber, Integer age, String city, String gender, Integer noOfHOMPolicies, Integer noOfRPIPolicies, Integer noOfRENPolicies) {
+    Address address;
+
+    public Member(String memberNumber, Integer age, String city, String gender, Integer noOfHOMPolicies, Integer noOfRPIPolicies, Integer noOfRENPolicies, Address address) {
         this.memberNumber = memberNumber;
         this.age = age;
         this.city = city;
@@ -23,6 +25,7 @@ public class Member {
         this.noOfHOMPolicies = noOfHOMPolicies;
         this.noOfRPIPolicies = noOfRPIPolicies;
         this.noOfRENPolicies = noOfRENPolicies;
+        this.address = address;
     }
 
     public String getMemberNumber() {
@@ -79,5 +82,13 @@ public class Member {
 
     public void setNoOfRENPolicies(Integer noOfRENPolicies) {
         this.noOfRENPolicies = noOfRENPolicies;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
